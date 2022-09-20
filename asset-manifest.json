@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/similar_trello/static/css/main.bacee3d4.css",
+    "main.js": "/similar_trello/static/js/main.f3fc61eb.js",
+    "index.html": "/similar_trello/index.html",
+    "main.bacee3d4.css.map": "/similar_trello/static/css/main.bacee3d4.css.map",
+    "main.f3fc61eb.js.map": "/similar_trello/static/js/main.f3fc61eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bacee3d4.css",
+    "static/js/main.f3fc61eb.js"
+  ]
+}
