@@ -21,7 +21,9 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-app-rewired eject"
+    "eject": "react-app-rewired eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,7 +44,9 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "react-app-rewire-alias": "^1.1.7",
     "react-app-rewired": "^2.2.1"
-  }
+  },
+  "homepage": "https://kodokuodius.github.io/similar_trello"
 }
