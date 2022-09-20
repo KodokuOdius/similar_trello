@@ -1,6 +1,117 @@
-main.main {
-    flex: 1 1 auto;
-
+.main {
     margin-inline: 75px;
-    min-height: 73vh;
+    margin-bottom: 15px;
+
+    .main__control-panel {
+        border-bottom: 2px solid #131313;
+        padding-top: 5px;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .control-panel__btn {
+            margin: 2px;
+            padding: 2px;
+            font-size: 14pt;
+            padding-inline: 15px;
+            background-color: #c5c5c5e2;
+            border-radius: 5px;
+        }
+    }
+
+    .main__columns {
+        border-inline: 2px solid black;
+        margin-top: 10px;
+        margin-inline: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        min-height: 250px;
+
+        .column {
+            border: 2px solid black;
+            border-radius: 7px;
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+            min-height: 150px;
+        }
+
+        .column__header {
+
+            .column__title {
+                text-align: left;
+                border-bottom: 2px solid #131313;
+
+                .column__title_input {
+                    font-size: 14pt;
+                    font-weight: 600;
+                    border: none;
+                    background: none;
+                }
+            }
+
+            .column__control {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding-inline: 20px;
+                padding-top: 2px;
+                margin-bottom: 10px;
+
+                .column__delete {
+                    &::after {
+                        content: " \2716";
+                    }
+
+                }
+
+                .column__add-ticket {
+
+                    &::before {
+                        content: "\271A ";
+                    }
+                }
+            }
+
+        }
+
+        .tickets {
+            .ticket {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding-inline: 20px;
+                border: 2px solid #131313;
+                border-radius: 7px;
+
+                .ticket__title {
+                    padding: 2px;
+
+                    .ticket__title_input {
+                        font-weight: 700;
+                        border: none;
+                        background: none;
+                    }
+                }
+
+                .ticket__delete {
+                    padding-inline: 5px;
+                    border-radius: 5px;
+
+                    &:hover {
+                        background-color: rgb(255, 81, 81);
+                    }
+                }
+            }
+
+            .ticket+.ticket {
+                margin-top: 5px;
+            }
+        }
+    }
 }
